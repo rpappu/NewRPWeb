@@ -1,5 +1,5 @@
 [build]
-  command = "curl -LO https://quarto.org/download/latest/quarto-linux-amd64.tar.gz && tar -xzf quarto-linux-amd64.tar.gz && ./quarto-1.*/bin/quarto render"
+  command = "curl -LO https://quarto.org/download/latest/quarto-linux-amd64.tar.gz && tar -xzf quarto-linux-amd64.tar.gz && rm -rf quarto-*/share/create && ./quarto-1.*/bin/quarto render"
   publish = "_site"
 
 [[plugins]]
