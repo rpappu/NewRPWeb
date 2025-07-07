@@ -1,0 +1,13 @@
+---
+title: "RFID-Enabling the world's largest Laundry"
+date: 2011-12-22
+categories: []
+tags: []
+image: /assets/disney-laundry.jpg
+---
+
+At ThingMagic, we also [RFID-enabled the world's largest laundry](https://www.rfidjournal.com/news/rfid-helps-disney-employees-get-into-character/83991/).
+
+![](/assets/disney-laundry.jpg)
+
+![](/assets/disney-laundry2.jpg)

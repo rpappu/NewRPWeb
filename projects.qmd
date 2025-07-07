@@ -1,0 +1,347 @@
+---
+title: "Projects"
+format: html
+---
+
+```{=html}
+<style>
+.filter-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e9ecef;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+.project {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.project:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.project-title a:hover {
+  color: #007bff !important;
+  text-decoration: underline !important;
+}
+
+.project.featured {
+  border-left: 4px solid #28a745;
+  background: #f8fff9;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.project-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.project-year {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.project-type {
+  background: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-status {
+  background: #28a745;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-status.in-progress {
+  background: #ffc107;
+  color: #000;
+}
+
+.project-status.archived {
+  background: #6c757d;
+}
+
+.project-tech {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.stats {
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.intro-text {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+</style>
+```
+
+```{=html}
+```
+
+```{=html}
+<script>
+const projects = [
+  {
+    title: "Magic Band",
+    description: "My team at ThingMagic did the original R&D in support of Disney's Magic Band project. Revolutionary wearable RFID technology that transformed the Disney theme park experience, serving as room key, park ticket, payment method, and FastPass all in one device.",
+    year: 2012,
+    type: "Commercial",
+    status: "completed",
+    technologies: ["RFID", "NFC", "IoT", "Wearables", "RF Engineering"],
+    featured: true,
+    link: "projects/magicband.html"
+  },
+  {
+    title: "RFID-Enabling the world's largest Laundry",
+    description: "At ThingMagic, we RFID-enabled the world's largest laundry for Disney. This system automated inventory management and improved operational efficiency across Disney's massive laundry operations.",
+    year: 2011,
+    type: "Commercial",
+    status: "completed",
+    technologies: ["RFID", "Automation", "Inventory Management", "Process Optimization"],
+    featured: false,
+    link: "projects/disneylaundry.html"
+  },
+  {
+    title: "ToolLink",
+    description: "My team designed and built ToolLink for Ford and Dewalt - a simple RFID system that let contractors track tools. Sold as an option for Ford F-Series pickups, E-Series vans, and Transit Connects. Won a 2009 Ford World Excellence Award.",
+    year: 2010,
+    type: "Commercial",
+    status: "completed",
+    technologies: ["RFID", "Asset Management", "Automotive", "Tool Tracking"],
+    featured: false,
+    link: "projects/toollink.html"
+  },
+  {
+    title: "RealNose",
+    description: "I worked on MIT's RealNose project to detect odors at extremely low concentrations. This electronic olfaction system explored artificial sensing technologies for identifying and classifying chemical signatures.",
+    year: 2009,
+    type: "Research",
+    status: "completed",
+    technologies: ["Sensors", "Chemical Detection", "Signal Processing", "Pattern Recognition"],
+    featured: false,
+    link: "projects/enose.html"
+  },
+  {
+    title: "ThinkCycle",
+    description: "Co-founded ThinkCycle while at MIT with Wendy Plesniak, Yael Maguire, Jason Taylor, Saul Griffith, Tim Prestero, and Ben Vigoda. An effort to harness the 'think cycles' of talent in the developed world to work on problems in the developing world.",
+    year: 2001,
+    type: "Innovation",
+    status: "completed",
+    technologies: ["Open Source", "Social Innovation", "Collaboration", "Development"],
+    featured: false,
+    link: "projects/dtm.html"
+  },
+  {
+    title: "Physical One-Way Functions",
+    description: "Subject of my doctoral dissertation at MIT. Showed that the physics of coherent transport through disordered 3D mesoscopic systems can generate unique identifiers. This work established the foundation for Physical Unclonable Functions (PUFs) and has been cited over 2,500 times.",
+    year: 2000,
+    type: "Research",
+    status: "completed",
+    technologies: ["Physics", "Cryptography", "Hardware Security", "Optical Systems", "PUFs"],
+    featured: true,
+    link: "projects/powf.html"
+  },
+  {
+    title: "Holographic video with haptic interaction",
+    description: "Joint work with Dr. Wendy Plesniak resulted in the very first holographic video system with haptic interaction. Enabled viewers to see a holographic image without glasses, feel it using a haptic stylus, and sculpt it as if using a lathe.",
+    year: 1998,
+    type: "Research",
+    status: "completed",
+    technologies: ["Holography", "Haptics", "Computer Graphics", "3D Display", "Real-time Systems"],
+    featured: false,
+    link: "projects/holovideo.html"
+  }
+];
+
+let currentFilter = 'all';
+
+function renderProjects() {
+  const container = document.getElementById('projects-container');
+  const noResults = document.getElementById('no-results');
+  
+  // Filter projects
+  const filteredProjects = currentFilter === 'all' 
+    ? projects 
+    : projects.filter(project => project.type === currentFilter);
+  
+  // Group by year
+  const groupedByYear = filteredProjects.reduce((groups, project) => {
+    if (!groups[project.year]) {
+      groups[project.year] = [];
+    }
+    groups[project.year].push(project);
+    return groups;
+  }, {});
+  
+  // Sort years descending
+  const sortedYears = Object.keys(groupedByYear).sort((a, b) => b - a);
+  
+  if (filteredProjects.length === 0) {
+    container.innerHTML = '';
+    noResults.style.display = 'block';
+  } else {
+    noResults.style.display = 'none';
+    
+    container.innerHTML = sortedYears.map(year => {
+      const yearProjects = groupedByYear[year];
+      return `
+        <div class="year-group">
+          <h2 class="year-header">${year}</h2>
+          ${yearProjects.map(project => `
+            <div class="project ${project.featured ? 'featured' : ''}">
+              <div class="project-title"><a href="${project.link}" style="color: #333; text-decoration: none;">${project.title}</a></div>
+              <div class="project-description">${project.description}</div>
+              <div class="project-meta">
+                <span class="project-year">${project.year}</span>
+                <span class="project-type">${project.type}</span>
+                <span class="project-status ${project.status}">${project.status.charAt(0).toUpperCase() + project.status.slice(1)}</span>
+              </div>
+              <div class="project-tech">
+                ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // Update stats
+  document.getElementById('visible-count').textContent = filteredProjects.length;
+  document.getElementById('total-count').textContent = projects.length;
+}
+
+function setupFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update current filter
+      currentFilter = button.dataset.type;
+      
+      // Re-render projects
+      renderProjects();
+    });
+  });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  setupFilters();
+  renderProjects();
+});
+</script>
+```

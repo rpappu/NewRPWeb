@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Filter by Publication Type:\n    \n      All Types\n      Journal Articles\n      Conference Papers\n      Technical Reports\n      Book Chapters\n    \n  \n\n\n\n  Showing 30 of 30 publications\n\n\n\n\n\n  No publications found matching the selected filters."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A collection of projects spanning RFID technology, holographic systems, physical cryptography, and innovative development initiatives. Click on any project for more information.\n\n\n\n  \n    Filter by Project Type:\n    \n      All Projects\n      Research\n      Commercial\n      Innovation\n      Hardware\n      Security\n    \n  \n\n\n\n  Showing 7 of 7 projects\n\n\n\n\n\n  No projects found matching the selected filters."
+  },
+  {
+    "objectID": "projects/toollink.html",
+    "href": "projects/toollink.html",
+    "title": "ToolLink",
+    "section": "",
+    "text": "My team, the Advanced Development Group at ThingMagic, designed and built ToolLink, by Ford and Dewalt. This was a simple RFID system that let contractors track tools using RFID. The system was sold as an option for all the Ford F-Series pickups, E-Series vans, and the Transit Connects.\nThis product won a 2009 Ford World Excellence Award in the New Customer-Focused Technology category."
+  },
+  {
+    "objectID": "projects/dtm.html",
+    "href": "projects/dtm.html",
+    "title": "ThinkCycle",
+    "section": "",
+    "text": "With several very smart people (Wendy Plesniak, Yael Maguire, Jason Taylor, Saul Griffith, Tim Prestero, Ben Vigoda), I co-founded ThinkCycle while at MIT. This was an effort to harness the “think cycles” of talent in the developed world to work on problems in the developing world. Tim Prestero has taken the idea to amazing new heights."
+  },
+  {
+    "objectID": "projects/magicband.html",
+    "href": "projects/magicband.html",
+    "title": "Magic Band",
+    "section": "",
+    "text": "My team at ThingMagic did the original R&D in support of Disney’s Magic Band project. In the image below, you see one of the very first bands wrapped around a big hunk of bacon (to simulate a human arm) and mounted on a 6-degree-of-freedom RF-friendly gimbal."
+  },
+  {
+    "objectID": "projects/disneylaundry.html",
+    "href": "projects/disneylaundry.html",
+    "title": "RFID-Enabling the world’s largest Laundry",
+    "section": "",
+    "text": "At ThingMagic, we also RFID-enabled the world’s largest laundry."
+  },
+  {
+    "objectID": "projects/enose.html",
+    "href": "projects/enose.html",
+    "title": "RealNose",
+    "section": "",
+    "text": "I worked on MIT’s RealNose project to try and detect odors at extremely low concentrations."
+  },
+  {
+    "objectID": "projects/holovideo.html",
+    "href": "projects/holovideo.html",
+    "title": "Holographic video with haptic interaction",
+    "section": "",
+    "text": "This project, joint work with Dr. Wendy Plesniak, resulted in the very first holographic video system with haptic interaction - enabling a viewer to see a holographic image without any glasses, feel it using a haptic stylus, and sculpt it as if using a lathe. The haptic stylus enabled a realistic physical simulation of using a lathe."
+  },
+  {
+    "objectID": "projects/powf.html",
+    "href": "projects/powf.html",
+    "title": "Physical One-Way Functions",
+    "section": "",
+    "text": "Physical One-Way Functions (POWFs) were the subject of my doctoral dissertation at MIT.\nThe central result was to show that the physics of coherent transport through disordered 3D mesoscopic systems is capable of generating unique identifiers. This is accomplished by physically reducing the complicated 3D microstructure using a coherent probe (e.g., a laser beam) and recording the resulting speckle pattern. The speckle pattern is then reduced to a fixed-length string of binary digits to produce a unique identifier. The research showed that this process of generating identifiers has all the properties of a noisy one-way function used in cryptography. These physical one-way functions (now called Physical Unclonable Functions) are inexpensive to fabricate, prohibitively difficult to duplicate, admit no compact mathematical representation, and are intrinsically tamper-resistant.\nThis work has been cited over 2,500 times and continues to be an active area of research."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ravi Pappu",
+    "section": "",
+    "text": "I am CEO of Apeiron Labs, a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.\nUntil mid-2022, I was SVP and CTO at InQTel, where I work long-term technology strategy and roadmaps, tools to systematically understand technology innovation, and diligence for deep tech investments in Quantum Information Science, AI, IoT, and 5G. I helped co-found and was a Senior Commercializaton Advisor at IQT Emerge where I worked with DARPA-funded startups on commercialization strategies. Emerge was spun out of In-Q-Tel in early 2023.\nPrior to this, I was a platform architect at Trimble Navigation. I went to Trimble from ThingMagic, a venture-backed pioneer in the RFID/IoT space that I co-founded. ThingMagic was acquired by Trimble Navigation.\nAs a scientist (Ph.D., MIT 2001), I have worked on original and influential contributions to several fields. I am a science/technology/mathematics omnivore and really enjoy bringing my skills to bear on solving challenging problems at the intersection of science, technology, and product development. I am equally comfortable synthesizing a technology/product vision as I am executing it.\nMy Erdos Number is 3. (Paul Erdos → Leonard Schulman → Benjamin Recht → Ravi Pappu)"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Ravi Pappu",
+    "section": "",
+    "text": "I am CEO of Apeiron Labs, a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.\nUntil mid-2022, I was SVP and CTO at InQTel, where I work long-term technology strategy and roadmaps, tools to systematically understand technology innovation, and diligence for deep tech investments in Quantum Information Science, AI, IoT, and 5G. I helped co-found and was a Senior Commercializaton Advisor at IQT Emerge where I worked with DARPA-funded startups on commercialization strategies. Emerge was spun out of In-Q-Tel in early 2023.\nPrior to this, I was a platform architect at Trimble Navigation. I went to Trimble from ThingMagic, a venture-backed pioneer in the RFID/IoT space that I co-founded. ThingMagic was acquired by Trimble Navigation.\nAs a scientist (Ph.D., MIT 2001), I have worked on original and influential contributions to several fields. I am a science/technology/mathematics omnivore and really enjoy bringing my skills to bear on solving challenging problems at the intersection of science, technology, and product development. I am equally comfortable synthesizing a technology/product vision as I am executing it.\nMy Erdos Number is 3. (Paul Erdos → Leonard Schulman → Benjamin Recht → Ravi Pappu)"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Ravi Pappu",
+    "section": "Education",
+    "text": "Education\nPh.D. - MIT (2001)\nMS - MIT (1995)\nMSEE - Villanova University (1993)\nB.Tech - Osmania University, India (1991)"
+  },
+  {
+    "objectID": "index.html#selected-awards",
+    "href": "index.html#selected-awards",
+    "title": "Ravi Pappu",
+    "section": "Selected Awards",
+    "text": "Selected Awards\n\nMIT Technology Review’s TR35 2003\n40 Under 40, Boston Business Journal, 2008\nCarl T. Humphrey Memorial Award for Leadership in the Engineering Profession, Villanova University, 2004"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog Posts & Articles",
+    "section": "",
+    "text": "A collection of blog posts and articles exploring technology, innovation, explainable AI, and organizational design. These pieces bridge academic research with practical insights for industry and policy.\n\n\n\n  \n    Filter by Topic:\n    \n      All Topics\n      Explainable AI\n      Innovation\n      Technology\n      Magic & AI\n    \n  \n\n\n\n  Showing 2 of 2 posts\n\n\n\n\n\n  No posts found matching the selected filters."
+  },
+  {
+    "objectID": "publications.html#research-publications",
+    "href": "publications.html#research-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Authors: R. Pappu, B. Recht, J. Taylor, N. Gershenfeld\nPublication: Science\nYear: 2002\nType: Journal Article\nPDF\n\n\n\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: IEEE Transactions on Signal Processing\nYear: 1997\nType: Journal Article\nPDF\n\n\n\nAuthors: A. Juels, R. Pappu\nPublication: Proceedings of the Financial Cryptography ’03 conference\nYear: 2003\nType: Conference Paper\nPDF\n\n\n\nAuthors: R. Pappu\nPublication: Unpublished manuscript\nYear: 2020\nType: Technical Report\nPDF\n\n\n\nAuthors: A. Brennen, N. Miller, R. Pappu, K. Pernia, L. Porter\nPublication: Technical Report\nYear: 2017\nType: Technical Report\nPDF\n\n\n\nAuthors: R. Pappu\nPublication: IQT Quarterly\nYear: 2016\nType: Technical Report\nPDF\n\n\n\nAuthors: Y. Maguire, R. Pappu\nPublication: IEEE Transactions in Automation Science and Engineering\nYear: 2009\nType: Journal Article\nPDF\n\n\n\nAuthors: A. Juels, R. Pappu, B. Parno\nPublication: Proceedings of Usenix Security\nYear: 2008\nType: Conference Paper\nPDF\n\n\n\nAuthors: S. Garfinkel, A. Juels, R. Pappu\nPublication: IEEE Security and Privacy\nYear: 2005\nType: Journal Article\nPDF\n\n\n\nAuthors: W. Plesniak, R. Pappu, S. Benton\nPublication: Proceedings of the IEEE\nYear: 2003\nType: Journal Article\nPDF\n\n\n\nAuthors: R. Pappu\nPublication: CryptoBytes Technical Newsletter, RSA Laboratories\nYear: 2003\nType: Technical Report\nPDF\n\n\n\nAuthors: M. Reynolds, J. Richards, S. Pathare, H. Tsai, Y. Maguire, R. Post, R. Pappu, B. Schoner\nPublication: Technical Report\nYear: 2002\nType: Technical Report\nPDF\n\n\n\nAuthors: W. Plesniak, R. Pappu, S. Benton\nPublication: Three-Dimensional Holographic Imaging\nYear: 2002\nType: Book Chapter\nPDF\n\n\n\nAuthors: O. Omojola, E. R. Post, M. D. Hancher, Y. Maguire, R. Pappu, B. Schoner, P. R. Russo, R. Fletcher, N. Gershenfeld\nPublication: IBM Systems Journal\nYear: 2000\nType: Journal Article\nPDF\n\n\n\nAuthors: R. Pappu, P. Beardsley\nPublication: Proceedings of the Third IEEE International Conference on Automatic Face and Gesture Recognition, Nara, Japan\nYear: 1998\nType: Conference Paper\nPDF\n\n\n\nAuthors: R. Pappu, W. Plesniak\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XII, San Jose\nYear: 1998\nType: Conference Paper\nPDF\n\n\n\nAuthors: W. Plesniak, R. Pappu\nPublication: Proceedings of ACM SIGCHI Conference on Human Factors in Computing Systems, Los Angeles\nYear: 1998\nType: Conference Paper\nPDF\n\n\n\nAuthors: R. Pappu, C. Sparrell, J. Underkoffler, A. Kropp, B. Chen, W. Plesniak\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XI, San Jose\nYear: 1997\nType: Conference Paper\nPDF\n\n\n\nAuthors: R. Pappu\nPublication: Journal of Optical Engineering\nYear: 1996\nType: Journal Article\nPDF\n\n\n\nAuthors: S. Benton, R. Pappu\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical Holography IX, San Jose\nYear: 1995\nType: Conference Paper\nPDF\n\n\n\nAuthors: M. E. Lucente, J. D. Sutter, R. Pappu, C. J. Sparrell, S. A. Benton, P. St.-Hilaire\nPublication: Proc. SPIE Vol. 2333, p. 374-380, Fifth International Symposium on Display Holography\nYear: 1995\nType: Conference Paper\n\n\n\nAuthors: M. E. Lucente, R. Pappu, C. J. Sparrell, S. A. Benton\nPublication: Proc. SPIE Vol. 2577, International Conference on Applications of Optical Holography\nYear: 1995\nType: Conference Paper\n\n\n\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE GLOBECOM\nYear: 1994\nType: Conference Paper\nPDF\n\n\n\nAuthors: S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE-SP Workshop on Neural Networks for Signal Processing\nYear: 1993\nType: Conference Paper\nPDF\n\n\n\nAuthors: S. S. Rao, R. Pappu\nPublication: Proceedings of the World Congress on Neural Networks\nYear: 1993\nType: Conference Paper\n\n\n\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers\nYear: 1993\nType: Conference Paper\nPDF\n\n\n\nAuthors: A. Mohan, R. Pappu, S. Shadmand\nPublication: Proceedings of the GNU Radio Conference\nYear: 2018\nType: Conference Paper\nPDF"
+  },
+  {
+    "objectID": "old-publications.html",
+    "href": "old-publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Maguire, Y., and R. Pappu. 2009. “An Optimal Q-Algorithm for ISO 18000-6C UHF RFID.” IEEE Transactions in Automation Science and Engineering 6: 16–24.\n\n\nJuels, A., R. Pappu, and B. Parno. 2008. Unidirectional Secret Sharing Across Time and Space with Applications to RFID Security. Proceedings of Usenix Security.\n\n\nPappu, R. 2008. Nonuniformly Sampled Computer-Generated Holograms. Journal of Optical Engineering.\n\n\nPlesniak, W., M. Halle, V. M. Bove, J. Barabas, and R. Pappu. 2006. Reconfigurable Image Projection Holograms. Journal of Optical Engineering.\n\n\nGarfinkel, Simson L., Ari Juels, and Ravi Pappu. 2005. “RFID Privacy: An Overview of Problems and Proposed Solutions.” IEEE Security and Privacy. doi:10.1109/MSP.2005.78.\n\n\nPlesniak, W., R. Pappu, and S. Benton. 2003. “Haptic Holography: A Primitive Computational Plastic.” Proceedings of the IEEE 91 (9): 1443–56.\n\n\nPappu, R. 2003. “Physical One-Way Functions-Cryptobytes.” CryptoBytes Technical Newsletter, RSA Laboratories 6 (2).\n\n\nJuels, A., and R. Pappu. 2003. Squealing Euros: Privacy Protection in RFID-Enabled Banknotes. Proceedings of the Financial Cryptography ’03 conference.\n\n\nReynolds, M., J. Richards, S. Pathare, H. Tsai, Y. Maguire, R. Post, R. Pappu, and B. Schoner. 2002. “Multi-Band, Low-Cost EPC Tag Reader.” {AutoID} center tech report.\n\n\nPlesniak, W., R. Pappu, and S. Benton. 2002. Tangible, Dynamic Holographic Images. Three- Dimensional Holographic Imaging, eds: C. J.\n\n\nOmojola, O., E. R. Post, M. D. Hancher, Y. Maguire, R. Pappu, B. Schoner, P. R. Russo, R. Fletcher, and N. Gershenfeld. 2000. “An Installation of Interactive Furniture.” IBM Systems Journal 39.\n\n\nPappu, R., and P. Beardsley. 1998. A Qualitative Approach to Classifying Gaze Direction. Proceedings of the Third IEEE International Conference on Automatic Face; Gesture Recognition, Nara, Japan.\n\n\nPlesniak, W., and R. Pappu. 1998. Coincident Display Using Haptics and Holographic Video. Proceedings of ACM SIGCHI Conference on Human Factors in Computing Systems, Los Angeles.\n\n\nPappu, R., and W. Plesniak. 1998. Haptic Interaction with Holographic Video Images. Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XII, San Jose.\n\n\nPappu, R., C. Sparrell, J. Underkoffler, A. Kropp, B. Chen, and W. Plesniak. 1997. A Generalized Pipeline for Preview and Rendering of Synthetic Holograms. Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XI, San Jose.\n\n\nGandhi, P., S. S. Rao, and R. Pappu. 1997. Wavelets for Waveform Coding of Digital Symbols. IEEE Transactions on Signal Processing.\n\n\nBenton, S., and R. Pappu. 1995. Minimum Pixel Holograms. Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical Holography IX, San Jose.\n\n\nLucente, M. E., R. Pappu, C. J. Sparrell, and S. A. Benton. 1995. “Progress in Holographic Video with the Acousto-Optical Modulator Display.” Edited by Proc. SPIE Vol. 2577 and Toshio Honda; p. 2-7 International Conference on Applications of Optical Holography 2577: 2–7.\n\n\nGandhi, P., S. S. Rao, and R. Pappu. 1994. Wavelets for Baseband Coding of Waveforms.\n\n\nRao, S. S., and R. Pappu. 1993a. Hierarchical Wavelet Neural Networks. Proceedings of the IEEE-SP Workshop on Neural Networks for Signal Processing.\n\n\n———. 1993b. Nonlinear Time Series Prediction Using Wavelet Networks. Proceedings of the World Congress on Neural Networks.\n\n\nGandhi, P., S. S. Rao, and R. Pappu. 1993. On Waveform Coding Using Wavelets. Proceedings of the IEEE Asilomar Conference on Signals, Systems,; Computers."
+  },
+  {
+    "objectID": "publications-1.html",
+    "href": "publications-1.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Physical One-Way Functions\nAuthors: R. Pappu, B. Recht, J. Taylor, N. Gershenfeld\nPublication: Science\nYear: 2002\nType: Journal Article\nPDF\n\n\nWavelets for waveform coding of digital symbols\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: IEEE Transactions on Signal Processing\nYear: 1997\nType: Journal Article\nPDF\n\n\nSquealing Euros: Privacy Protection in RFID-enabled banknotes\nAuthors: A. Juels, R. Pappu\nPublication: Proceedings of the Financial Cryptography ’03 conference\nYear: 2003\nType: Conference Paper\nPDF\n\n\nExplOrs: Explanation oracles and the architecture of explainability\nAuthors: R. Pappu\nPublication: Unpublished manuscript\nYear: 2020\nType: Technical Report\nPDF\n\n\nVisualizing Uncertainty in Human Geography Data\nAuthors: A. Brennen, N. Miller, R. Pappu, K. Pernia, L. Porter\nPublication: Technical Report\nYear: 2017\nType: Technical Report\nPDF\n\n\nMaking IRL Computable: the inevitable Internet of Things\nAuthors: R. Pappu\nPublication: IQT Quarterly\nYear: 2016\nType: Technical Report\nPDF\n\n\nAn Optimal Q-Algorithm For ISO 18000-6C UHF RFID\nAuthors: Y. Maguire, R. Pappu\nPublication: IEEE Transactions in Automation Science and Engineering\nYear: 2009\nType: Journal Article\nPDF\n\n\nUnidirectional Secret Sharing Across Time and Space with Applications to RFID Security\nAuthors: A. Juels, R. Pappu, B. Parno\nPublication: Proceedings of Usenix Security\nYear: 2008\nType: Conference Paper\nPDF\n\n\nRFID Privacy: An Overview of Problems and Proposed Solutions\nAuthors: S. Garfinkel, A. Juels, R. Pappu\nPublication: IEEE Security and Privacy\nYear: 2005\nType: Journal Article\nPDF\n\n\nHaptic Holography: A Primitive Computational Plastic\nAuthors: W. Plesniak, R. Pappu, S. Benton\nPublication: Proceedings of the IEEE\nYear: 2003\nType: Journal Article\nPDF\n\n\nPhysical One-Way Functions\nAuthors: R. Pappu\nPublication: CryptoBytes Technical Newsletter, RSA Laboratories\nYear: 2003\nType: Technical Report\nPDF\n\n\nMulti-Band, Low-Cost EPC Tag Reader\nAuthors: M. Reynolds, J. Richards, S. Pathare, H. Tsai, Y. Maguire, R. Post, R. Pappu, B. Schoner\nPublication: Technical Report\nYear: 2002\nType: Technical Report\nPDF\n\n\nTangible, Dynamic Holographic Images\nAuthors: W. Plesniak, R. Pappu, S. Benton\nPublication: Three-Dimensional Holographic Imaging\nYear: 2002\nType: Book Chapter\nPDF\n\n\nAn installation of interactive furniture\nAuthors: O. Omojola, E. R. Post, M. D. Hancher, Y. Maguire, R. Pappu, B. Schoner, P. R. Russo, R. Fletcher, N. Gershenfeld\nPublication: IBM Systems Journal\nYear: 2000\nType: Journal Article\nPDF\n\n\nA qualitative approach to classifying gaze direction\nAuthors: R. Pappu, P. Beardsley\nPublication: Proceedings of the Third IEEE International Conference on Automatic Face and Gesture Recognition, Nara, Japan\nYear: 1998\nType: Conference Paper\nPDF\n\n\nHaptic interaction with holographic video images\nAuthors: R. Pappu, W. Plesniak\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XII, San Jose\nYear: 1998\nType: Conference Paper\nPDF\n\n\nCoincident display using haptics and holographic video\nAuthors: W. Plesniak, R. Pappu\nPublication: Proceedings of ACM SIGCHI Conference on Human Factors in Computing Systems, Los Angeles\nYear: 1998\nType: Conference Paper\nPDF\n\n\nA generalized pipeline for preview and rendering of synthetic holograms\nAuthors: R. Pappu, C. Sparrell, J. Underkoffler, A. Kropp, B. Chen, W. Plesniak\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical, Holography XI, San Jose\nYear: 1997\nType: Conference Paper\nPDF\n\n\nNonuniformly sampled computer-generated holograms\nAuthors: R. Pappu\nPublication: Journal of Optical Engineering\nYear: 1996\nType: Journal Article\nPDF\n\n\nMinimum Pixel Holograms\nAuthors: S. Benton, R. Pappu\nPublication: Proceedings of the IS&T/SPIE’s Symposium on Electronic Imaging, Practical Holography IX, San Jose\nYear: 1995\nType: Conference Paper\nPDF\n\n\nScaling up the MIT holographic video system\nAuthors: M. E. Lucente, J. D. Sutter, R. Pappu, C. J. Sparrell, S. A. Benton, P. St.-Hilaire\nPublication: Proc. SPIE Vol. 2333, p. 374-380, Fifth International Symposium on Display Holography\nYear: 1995\nType: Conference Paper\n\n\nProgress in holographic video with the acousto-optical modulator display\nAuthors: M. E. Lucente, R. Pappu, C. J. Sparrell, S. A. Benton\nPublication: Proc. SPIE Vol. 2577, International Conference on Applications of Optical Holography\nYear: 1995\nType: Conference Paper\n\n\nWavelets for baseband coding of waveforms\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE GLOBECOM\nYear: 1994\nType: Conference Paper\nPDF\n\n\nHierarchical Wavelet Neural Networks\nAuthors: S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE-SP Workshop on Neural Networks for Signal Processing\nYear: 1993\nType: Conference Paper\nPDF\n\n\nNonlinear Time Series Prediction Using Wavelet Networks\nAuthors: S. S. Rao, R. Pappu\nPublication: Proceedings of the World Congress on Neural Networks\nYear: 1993\nType: Conference Paper\n\n\nOn Waveform Coding Using Wavelets\nAuthors: P. Gandhi, S. S. Rao, R. Pappu\nPublication: Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers\nYear: 1993\nType: Conference Paper\nPDF\n\n\nD3 - A system for recording complex experiments with an extension of SigMF\nAuthors: A. Mohan, R. Pappu, S. Shadmand\nPublication: Proceedings of the GNU Radio Conference\nYear: 2018\nType: Conference Paper\nPDF"
+  },
+  {
+    "objectID": "publications-2.html",
+    "href": "publications-2.html",
+    "title": "Publications",
+    "section": "",
+    "text": "&lt;label class=\"filter-label\"&gt;Filter by Publication Type:&lt;/label&gt;\n&lt;div class=\"filter-buttons\"&gt;\n  &lt;button class=\"filter-btn active\" data-type=\"all\"&gt;All Types&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-type=\"Journal Article\"&gt;Journal Articles&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-type=\"Conference Paper\"&gt;Conference Papers&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-type=\"Technical Report\"&gt;Technical Reports&lt;/button&gt;\n  &lt;button class=\"filter-btn\" data-type=\"Book Chapter\"&gt;Book Chapters&lt;/button&gt;\n&lt;/div&gt;\n\n\n\nShowing 30 of 30 publications\n\n\n\n\n\nNo publications found matching the selected filters."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks & Presentations",
+    "section": "",
+    "text": "Filter by Talk Type:\n    \n      All Types\n      Keynotes\n      Conference Talks\n      Tech Talks\n      Workshops\n      Panels\n      Podcasts\n    \n  \n\n\n\n  Showing 13 of 13 talks\n\n\n\n\n\n  No talks found matching the selected filters."
+  }
+]

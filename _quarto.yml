@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Ravi Pappu"
+  navbar:
+    right:
+      - href: posts.qmd
+        text: Posts
+      - href: publications.qmd
+        text: Publications
+      - href: talks.qmd
+        text: Presentations
+      - href: projects.qmd
+        text: Projects
+
+format:
+   html:
+    theme: [cosmo, custom.scss]
+    css: styles.css
+    mainfont: "Libre Baskerville, Newsreader, EB Garamond, Georgia, serif"
+
+editor: visual
+

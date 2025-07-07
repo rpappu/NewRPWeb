@@ -1,0 +1,11 @@
+---
+title: "Holographic video with haptic interaction"
+date: 1998-09-01
+categories: []
+tags: []
+image: /assets/sculpting-light.png
+---
+
+This project, joint work with Dr. Wendy Plesniak, resulted in the very first holographic video system with haptic interaction - enabling a viewer to see a holographic image without any glasses, feel it using a haptic stylus, and sculpt it as if using a lathe. The haptic stylus enabled a realistic physical simulation of using a lathe.
+
+{{< video https://vimeo.com/2351781 >}}

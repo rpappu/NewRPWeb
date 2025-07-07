@@ -1,0 +1,13 @@
+---
+title: "ToolLink"
+date: 2010-12-22
+categories: []
+tags: []
+image: /assets/toollink.webp
+---
+
+My team, the Advanced Development Group at ThingMagic, designed and built ToolLink, by Ford and Dewalt. This was a simple RFID system that let contractors track tools using RFID. The system was sold as an option for all the Ford F-Series pickups, E-Series vans, and the Transit Connects.
+
+This product won a [2009 Ford World Excellence Award in the New Customer-Focused Technology category](https://www.autoevolution.com/news/ford-world-excellence-awards-8040.html).
+
+{{< video https://www.youtube.com/watch?v=gy_yCIyDxrs >}}

@@ -1,0 +1,478 @@
+---
+title: "Talks & Presentations"
+format: html
+---
+
+```{=html}
+<style>
+.filter-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e9ecef;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+.talk {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.talk:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.talk.selected {
+  border-left: 4px solid #28a745;
+  background: #f8fff9;
+}
+
+.talk-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.talk-authors {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.talk-event {
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.talk-location {
+  color: #777;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.talk-abstract {
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.talk-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.talk-year {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.talk-type {
+  background: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.talk-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.talk-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.talk-link:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.stats {
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+</style>
+```
+
+```{=html}
+<div class="filter-container">
+  <div class="filter-group">
+    <label class="filter-label">Filter by Talk Type:</label>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-type="all">All Types</button>
+      <button class="filter-btn" data-type="Keynote">Keynotes</button>
+      <button class="filter-btn" data-type="Conference Talk">Conference Talks</button>
+      <button class="filter-btn" data-type="Tech Talk">Tech Talks</button>
+      <button class="filter-btn" data-type="Workshop">Workshops</button>
+      <button class="filter-btn" data-type="Panel">Panels</button>
+      <button class="filter-btn" data-type="Podcast">Podcasts</button>
+    </div>
+  </div>
+</div>
+
+<div class="stats" id="stats">
+  Showing <span id="visible-count">13</span> of <span id="total-count">13</span> talks
+</div>
+
+<div id="talks-container"></div>
+
+<div class="no-results" id="no-results" style="display: none;">
+  No talks found matching the selected filters.
+</div>
+```
+
+```{=html}
+<script>
+const talks = [
+  {
+    title: "The Wright Approach to Ocean Data",
+    authors: ["R. Pappu"],
+    event: "Possibility Ocean 2025",
+    location: "Newport, RI",
+    year: 2025,
+    type: "Keynote",
+    abstract: "When it comes to scaling ocean data, what if we started with the price target instead of the technology? Dr. Ravi Pappu of Apeiron Labs proposes a new approach that shifts the focus from an engineering problem to an economic one. In this keynote, Dr. Pappu explores how cost influences accessibility, innovation, and scalability, and uncovers new possibilities for how we gather, use, and share ocean data.",
+    pdf: "https://github.com/rpappu/pdf-publications/blob/master/Ravi%20-%20PO%20Keynote-2025.pdf",
+    slides: "",
+    video: "https://www.possibilityocean.com/media/keynote-ravi-pappu",
+    selected: true
+  },
+  {
+    title: "SpaceX for Oceans",
+    authors: ["R. Pappu"],
+    event: "S2G Summit",
+    location: "Chicago, Il",
+    year: 2024,
+    type: "Fireside Chat",
+    abstract: "Ravi Pappu, CEO of Apeiron Labs, addresses the environmental importance of obtaining upper ocean data, what excites him about ocean exploration, and his company’s goal to establish a global network of subsurface devices and create data-as-a-service platform for the oceans",
+    pdf: "",
+    slides: "",
+    video: "https://www.youtube.com/watch?v=Wm2TfC6TBLc",
+    selected: true
+  },
+  {
+    title: "Physical Unclonable Functions: The First Fifty Years",
+    authors: ["R. Pappu"],
+    event: "ASHES 23 Keynote",
+    location: "Copenhagen",
+    year: 2023,
+    type: "Keynote",
+    abstract: "For over twenty years, Physical Unclonable Functions (PUFs) have spurred innovation in hardware security, giving rise to novel systems, protocols, attacks, and a deeper understanding of extracting entropy from the inherent disorder in physical structures. Despite this progress, a crucial gap remains. In this talk, I'll recount the (un)fortunate events that led me to discover PUFs and share key highlights of PUF research since. Looking back from a vantage point twenty years in the future, I'll explore some desired results required to bridge the gap and establish a theoretical framework for unclonability.",
+    pdf: "https://github.com/rpappu/pdf-publications/blob/master/AshesKeyNoteFinal-Compressed.pdf",
+    slides: "",
+    video: "",
+    selected: true
+  },
+  {
+    title: "5G and Me - an introductory podcast on 5G",
+    authors: ["R. Pappu", "V. Sandesara"],
+    event: "InQTel podcast",
+    location: "",
+    year: 2018,
+    type: "Podcast",
+    abstract: "This is a 25-minute podcast I did at InQTel to educate our customers on the upcoming 5G wireless standards and how it might affect the average person.",
+    pdf: "",
+    slides: "",
+    video: "",
+    podcast: "https://soundcloud.com/user-313491606/03-5g-and-me",
+    selected: false
+  },
+  {
+    title: "Technology Genomes and Innovation",
+    authors: ["R. Pappu"],
+    event: "Neo4j Graphtour",
+    location: "",
+    year: 2018,
+    type: "Tech Talk",
+    abstract: "I gave this talk on how InQTel uses graph databases to help us navigate the Mission Economy - the connection between startups, problems faced by the Intelligence Community, and the evolution of technology capabilities. The slides for this event are not public, but a case study (see link below) was published by Neo4j.",
+    pdf: "",
+    slides: "",
+    video: "",
+    whitepaper: "https://go.neo4j.com/rs/710-RRC-335/images/Neo4j-case-study-In-Q-Tel-EN-US.pdf?_ga=2.255500232.1715507714.1543692142-412101514.1543692142",
+    selected: false
+  },
+  {
+    title: "Deep Learning: Promise and Pitfalls",
+    authors: ["R. Pappu"],
+    event: "NVTC Tech Titans 2018",
+    location: "Arlington, VA",
+    year: 2018,
+    type: "Panel",
+    abstract: "I moderated a panel at the Northern Virginia Technology Council on the promise and panels of Deep Learning.",
+    pdf: "",
+    slides: "",
+    video: "https://www.youtube.com/watch?time_continue=37&v=7bsPTZ4UeCI",
+    selected: false
+  },
+  {
+    title: "IoT Capabilities",
+    authors: ["R. Pappu"],
+    event: "MIT IoT Bootcamp",
+    location: "Cambridge, MA",
+    year: 2017,
+    type: "Workshop",
+    abstract: "Slides from a 90-minute talk I gave at the first MIT IoT Bootcamp.",
+    pdf: "https://github.com/rpappu/talks/blob/master/PappuIoTCaps2017.pdf",
+    slides: "https://gitpitch.com/rpappu/iotcaps#/",
+    video: "",
+    selected: false
+  },
+  {
+    title: "Conway's Law and Innovation: a conjecture",
+    authors: ["R. Pappu"],
+    event: "Multiple locations",
+    location: "",
+    year: 2011,
+    type: "Conference Talk",
+    abstract: "I have give this talk several times over the past decade. It's primarily aimed at management to alert them to the hidden influence of organizational structures on innovation...or, why companies who get really good at one thing often have a very hard time doing something radically different.",
+    pdf: "https://github.com/rpappu/talks/blob/master/ConwaysLawAndItsConsequences-Public.pdf",
+    slides: "",
+    video: "",
+    selected: false
+  },
+  {
+    title: "The Making of Camels",
+    authors: ["R. Pappu"],
+    event: "RFID Security Workshop",
+    location: "Amherst, MA",
+    year: 2011,
+    type: "Workshop",
+    abstract: "Sir Alec Issigonis, the designer of the Mini, is known to have said that \"a camel is a horse designed by a committee.\" In this talk, I will attempt to illuminate the process of how modern RFID standards are made through three examples. My goal is to convey the forces that make modern RFID standards as complicated as they are, and why it is usually very difficult for academic research to make its way into such standards in the short term.",
+    pdf: "",
+    slides: "",
+    video: "https://vimeo.com/26960681",
+    selected: false
+  },
+  {
+    title: "The Physics of RFID",
+    authors: ["R. Pappu", "M. Reynolds"],
+    event: "RFID Security Workshop, 2011",
+    location: "Amherst, MA",
+    year: 2011,
+    type: "Workshop",
+    abstract: "Matt Reynolds and I gave a tutorial on the physics of RFID and UHF protocols at the RFID Security Workshop in June, 2011.",
+    pdf: "",
+    slides: "",
+    video: "https://vimeo.com/27534223",
+    selected: false
+  },
+  {
+    title: "Passive RFID Innovation",
+    authors: ["R. Pappu"],
+    event: "MIT Auto-ID SIG",
+    location: "Cambridge, MA",
+    year: 2011,
+    type: "Tech Talk",
+    abstract: "This is a short talk on the innovation that I expected in passive RFID during 2011-2015",
+    pdf: "",
+    slides: "https://www.slideshare.net/ravipappu/ravi-pappu-autoidsigtalkmarch2011",
+    video: "",
+    selected: false
+  },
+  {
+    title: "Reality Search Engines",
+    authors: ["R. Pappu"],
+    event: "Google Tech Talk",
+    location: "",
+    year: 2008,
+    type: "Tech Talk",
+    abstract: "A Google Tech Talk in Cambridge, MA. I spoke about how passive RFID is enabling Reality Search Engines - the ability to search physical space as easily as digital space.",
+    pdf: "",
+    slides: "https://www.slideshare.net/ravipappu/ravi-pappu-google-tech-talk-2008",
+    video: "",
+    selected: false
+  },
+  {
+    title: "RFID Privacy Without Killing",
+    authors: ["R. Pappu"],
+    event: "RFID CUSP Workshop, Johns Hopkins University",
+    location: "Baltimore, MD",
+    year: 2008,
+    type: "Workshop",
+    abstract: "We explore the problem of secret-key distribution in unidirectional channels, those in which a sender transmits information blindly to a receiver. We consider two approaches: (1) Key sharing across space, i.e., via simultaneously emitted values that may follow different data paths and (2) Key sharing across time, i.e., in temporally staggered emissions. Our constructions are of general interest, treating, for instance, the basic problem of constructing highly compact secret shares. Our main motivating problem, however, is practical key management in RFID (Radio-Frequency IDentification) systems. We describe the application of our techniques to RFID-enabled supply chains and a prototype privacy-enhancing system.",
+    pdf: "https://github.com/rpappu/talks/blob/master/Pappu-RFIDCUSP-Talk-2008.pdf",
+    slides: "",
+    video: "",
+    selected: false
+  },
+  {
+    title: "Physical One-Way Functions",
+    authors: ["R. Pappu"],
+    event: "Security Seminar, Cambridge University, UK",
+    location: "Cambridge University, UK",
+    year: 2002,
+    type: "Conference Talk",
+    abstract: "Modern cryptographic practice rests on the use of one-way functions, which are easy to evaluate but difficult to invert. Unfortunately, commonly used one-way functions are either based on unproven conjectures or have known vulnerabilities. We show that instead of relying on number theory, the mesoscopic physics of coherent transport through a disordered medium can be used to allocate and authenticate unique identifiers by physically reducing the medium's microstructure to a fixed-length string of binary digits. These physical one-way functions are inexpensive to fabricate, prohibitively difficult to duplicate, admit no compact mathematical representation, and are intrinsically tamper-resistant. We provide an authentication protocol based on the enormous address space that is a principal characteristic of physical one-way functions.",
+    pdf: "",
+    slides: "https://www.slideshare.net/ravipappu/ravi-pappu-security-seminar-cambridge-uk-sept2002",
+    video: "https://vimeo.com/2351889",
+    selected: false
+  }
+];
+
+let currentFilter = 'all';
+
+function renderTalks() {
+  const container = document.getElementById('talks-container');
+  const noResults = document.getElementById('no-results');
+  
+  // Filter talks
+  const filteredTalks = currentFilter === 'all' 
+    ? talks 
+    : talks.filter(talk => talk.type === currentFilter);
+  
+  // Group by year
+  const groupedByYear = filteredTalks.reduce((groups, talk) => {
+    if (!groups[talk.year]) {
+      groups[talk.year] = [];
+    }
+    groups[talk.year].push(talk);
+    return groups;
+  }, {});
+  
+  // Sort years descending
+  const sortedYears = Object.keys(groupedByYear).sort((a, b) => b - a);
+  
+  if (filteredTalks.length === 0) {
+    container.innerHTML = '';
+    noResults.style.display = 'block';
+  } else {
+    noResults.style.display = 'none';
+    
+    container.innerHTML = sortedYears.map(year => {
+      const yearTalks = groupedByYear[year];
+      return `
+        <div class="year-group">
+          <h2 class="year-header">${year}</h2>
+          ${yearTalks.map(talk => `
+            <div class="talk ${talk.selected ? 'selected' : ''}">
+              <div class="talk-title">${talk.title}</div>
+              <div class="talk-authors">${talk.authors.join(', ')}</div>
+              <div class="talk-event"><strong>${talk.event}</strong></div>
+              ${talk.location ? `<div class="talk-location">📍 ${talk.location}</div>` : ''}
+              <div class="talk-meta">
+                <span class="talk-year">${talk.year}</span>
+                <span class="talk-type">${talk.type}</span>
+              </div>
+              ${talk.abstract ? `<div class="talk-abstract">${talk.abstract}</div>` : ''}
+              <div class="talk-links">
+                ${talk.pdf ? `<a href="${talk.pdf}" class="talk-link" target="_blank">📄 PDF</a>` : ''}
+                ${talk.slides ? `<a href="${talk.slides}" class="talk-link" target="_blank">📊 Slides</a>` : ''}
+                ${talk.video ? `<a href="${talk.video}" class="talk-link" target="_blank">🎥 Video</a>` : ''}
+                ${talk.podcast ? `<a href="${talk.podcast}" class="talk-link" target="_blank">🎙️ Podcast</a>` : ''}
+                ${talk.whitepaper ? `<a href="${talk.whitepaper}" class="talk-link" target="_blank">📋 Whitepaper</a>` : ''}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // Update stats
+  document.getElementById('visible-count').textContent = filteredTalks.length;
+  document.getElementById('total-count').textContent = talks.length;
+}
+
+function setupFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update current filter
+      currentFilter = button.dataset.type;
+      
+      // Re-render talks
+      renderTalks();
+    });
+  });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  setupFilters();
+  renderTalks();
+});
+</script>
+```

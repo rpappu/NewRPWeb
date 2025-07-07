@@ -1,0 +1,524 @@
+---
+title: "Publications"
+format: html
+---
+
+```{=html}
+<style>
+.filter-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e9ecef;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+.publication {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.publication:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.publication.selected {
+  border-left: 4px solid #28a745;
+  background: #f8fff9;
+}
+
+.pub-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.pub-authors {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.pub-venue {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.pub-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.pub-year {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.pub-type {
+  background: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pub-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pub-link:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.stats {
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+</style>
+```
+
+```{=html}
+<div class="filter-container">
+  <div class="filter-group">
+    <label class="filter-label">Filter by Publication Type:</label>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-type="all">All Types</button>
+      <button class="filter-btn" data-type="Journal Article">Journal Articles</button>
+      <button class="filter-btn" data-type="Conference Paper">Conference Papers</button>
+      <button class="filter-btn" data-type="Technical Report">Technical Reports</button>
+      <button class="filter-btn" data-type="Book Chapter">Book Chapters</button>
+    </div>
+  </div>
+</div>
+
+<div class="stats" id="stats">
+  Showing <span id="visible-count">30</span> of <span id="total-count">30</span> publications
+</div>
+
+<div id="publications-container"></div>
+
+<div class="no-results" id="no-results" style="display: none;">
+  No publications found matching the selected filters.
+</div>
+```
+
+```{=html}
+<script>
+const publications = [
+  {
+    title: "ExplOrs: Explanation oracles and the architecture of explainability",
+    authors: ["R. Pappu"],
+    venue: "Unpublished manuscript",
+    year: 2020,
+    type: "Technical Report",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/Pappu-ExplOrs-Final-2020.pdf",
+    selected: false
+  },
+  {
+    title: "D3 - A system for recording complex experiments with an extension of SigMF",
+    authors: ["A. Mohan", "R. Pappu", "S. Shadmand"],
+    venue: "Proceedings of the GNU Radio Conference",
+    year: 2018,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/MohanPappuSHadmandGRCON2018.pdf",
+    selected: false
+  },
+  {
+    title: "Visualizing Uncertainty in Human Geography Data",
+    authors: ["A. Brennen", "N. Miller", "R. Pappu", "K. Pernia", "L. Porter"],
+    venue: "Technical Report",
+    year: 2017,
+    type: "Technical Report",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/Uncertainty-Report_PUBLIC.pdf",
+    selected: false
+  },
+  {
+    title: "Making IRL Computable: the inevitable Internet of Things",
+    authors: ["R. Pappu"],
+    venue: "IQT Quarterly",
+    year: 2016,
+    type: "Technical Report",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/IQT%20Quarterly%20Summer%202016%20-%20The%20Inevitable%20Internet%20of%20Things.pdf",
+    selected: false
+  },
+  {
+    title: "An Optimal Q-Algorithm For ISO 18000-6C UHF RFID",
+    authors: ["Y. Maguire", "R. Pappu"],
+    venue: "IEEE Transactions in Automation Science and Engineering",
+    year: 2009,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/MaguirePappuIEEETrans2009.pdf",
+    selected: false
+  },
+  {
+    title: "Computational Display Holography",
+    authors: ["W. Plesniak", "R. Pappu", "J. Underkoffler", "M. Lucente", "P. St-Hilaire"],
+    venue: "Holographic Imaging",
+    year: 2008,
+    type: "Book Chapter",
+    pdf: "",
+    selected: false
+  },
+  {
+    title: "Unidirectional Secret Sharing Across Time and Space with Applications to RFID Security",
+    authors: ["A. Juels", "R. Pappu", "B. Parno"],
+    venue: "Proceedings of Usenix Security",
+    year: 2008,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/2008-044.pdf",
+    selected: false
+  },
+  {
+    title: "Reconfigurable Image Projection Holograms",
+    authors: ["W. Plesniak", "M. Halle", "V. M. Bove", "J. Barabas", "R. Pappu"],
+    venue: "Journal of Optical Engineering",
+    year: 2006,
+    type: "Journal Article",
+    pdf: "",
+    selected: false
+  },
+  {
+    title: "RFID Privacy: An Overview of Problems and Proposed Solutions",
+    authors: ["S. Garfinkel", "A. Juels", "R. Pappu"],
+    venue: "IEEE Security and Privacy",
+    year: 2005,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/GarfinkelJuelsPappuIEEESP2005.pdf",
+    selected: false
+  },
+  {
+    title: "Squealing Euros: Privacy Protection in RFID-enabled banknotes",
+    authors: ["A. Juels", "R. Pappu"],
+    venue: "Proceedings of the Financial Cryptography '03 conference",
+    year: 2003,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/JuelsPappu-Euros-2003.pdf",
+    selected: true
+  },
+  {
+    title: "Haptic Holography: A Primitive Computational Plastic",
+    authors: ["W. Plesniak", "R. Pappu", "S. Benton"],
+    venue: "Proceedings of the IEEE",
+    year: 2003,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PlesniakPappuBenton-IEEE-2003.pdf",
+    selected: true
+  },
+  {
+    title: "Physical One-Way Functions",
+    authors: ["R. Pappu"],
+    venue: "CryptoBytes Technical Newsletter, RSA Laboratories",
+    year: 2003,
+    type: "Technical Report",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/Pappu-Cryptobytes-2003.pdf",
+    selected: false
+  },
+  {
+    title: "Physical One-Way Functions",
+    authors: ["R. Pappu", "B. Recht", "J. Taylor", "N. Gershenfeld"],
+    venue: "Science",
+    year: 2002,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/Pappu-Science-2002.pdf",
+    selected: true
+  },
+  {
+    title: "Multi-Band, Low-Cost EPC Tag Reader",
+    authors: ["M. Reynolds", "J. Richards", "S. Pathare", "H. Tsai", "Y. Maguire", "R. Post", "R. Pappu", "B. Schoner"],
+    venue: "Technical Report",
+    year: 2002,
+    type: "Technical Report",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/ReynoldsEtAl02.pdf",
+    selected: false
+  },
+  {
+    title: "Tangible, Dynamic Holographic Images",
+    authors: ["W. Plesniak", "R. Pappu", "S. Benton"],
+    venue: "Three-Dimensional Holographic Imaging",
+    year: 2002,
+    type: "Book Chapter",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PlesniakPappuBenton-Wiley-2002.pdf",
+    selected: false
+  },
+  {
+    title: "An installation of interactive furniture",
+    authors: ["O. Omojola", "E. R. Post", "M. D. Hancher", "Y. Maguire", "R. Pappu", "B. Schoner", "P. R. Russo", "R. Fletcher", "N. Gershenfeld"],
+    venue: "IBM Systems Journal",
+    year: 2000,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/OmojolaEtAl00.pdf",
+    selected: false
+  },
+  {
+    title: "A qualitative approach to classifying gaze direction",
+    authors: ["R. Pappu", "P. Beardsley"],
+    venue: "Proceedings of the Third IEEE International Conference on Automatic Face and Gesture Recognition, Nara, Japan",
+    year: 1998,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PappuBeardlseyFG98.pdf",
+    selected: false
+  },
+  {
+    title: "Haptic interaction with holographic video images",
+    authors: ["R. Pappu", "W. Plesniak"],
+    venue: "Proceedings of the IS&T/SPIE's Symposium on Electronic Imaging, Practical, Holography XII, San Jose",
+    year: 1998,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PappuPlesniak-SPIE-1998.pdf",
+    selected: false
+  },
+  {
+    title: "Coincident display using haptics and holographic video",
+    authors: ["W. Plesniak", "R. Pappu"],
+    venue: "Proceedings of ACM SIGCHI Conference on Human Factors in Computing Systems, Los Angeles",
+    year: 1998,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PlesniakPappuCHI98.pdf",
+    selected: false
+  },
+  {
+    title: "A generalized pipeline for preview and rendering of synthetic holograms",
+    authors: ["R. Pappu", "C. Sparrell", "J. Underkoffler", "A. Kropp", "B. Chen", "W. Plesniak"],
+    venue: "Proceedings of the IS&T/SPIE's Symposium on Electronic Imaging, Practical, Holography XI, San Jose",
+    year: 1997,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/PappuEtAlSPIE97.pdf",
+    selected: false
+  },
+  {
+    title: "Wavelets for waveform coding of digital symbols",
+    authors: ["P. Gandhi", "S. S. Rao", "R. Pappu"],
+    venue: "IEEE Transactions on Signal Processing",
+    year: 1997,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/GandhiRaoPappuIEEESP97.pdf",
+    selected: true
+  },
+  {
+    title: "Nonuniformly sampled computer-generated holograms",
+    authors: ["R. Pappu"],
+    venue: "Journal of Optical Engineering",
+    year: 1996,
+    type: "Journal Article",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/Pappu-JOE-1996.pdf",
+    selected: false
+  },
+  {
+    title: "Minimum Pixel Holograms",
+    authors: ["S. Benton", "R. Pappu"],
+    venue: "Proceedings of the IS&T/SPIE's Symposium on Electronic Imaging, Practical Holography IX, San Jose",
+    year: 1995,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/BentonPappuSPIE95.pdf",
+    selected: false
+  },
+  {
+    title: "Scaling up the MIT holographic video system",
+    authors: ["M. E. Lucente", "J. D. Sutter", "R. Pappu", "C. J. Sparrell", "S. A. Benton", "P. St.-Hilaire"],
+    venue: "Proc. SPIE Vol. 2333, p. 374-380, Fifth International Symposium on Display Holography",
+    year: 1995,
+    type: "Conference Paper",
+    pdf: "",
+    selected: false
+  },
+  {
+    title: "Progress in holographic video with the acousto-optical modulator display",
+    authors: ["M. E. Lucente", "R. Pappu", "C. J. Sparrell", "S. A. Benton"],
+    venue: "Proc. SPIE Vol. 2577, International Conference on Applications of Optical Holography",
+    year: 1995,
+    type: "Conference Paper",
+    pdf: "",
+    selected: false
+  },
+  {
+    title: "Wavelets for baseband coding of waveforms",
+    authors: ["P. Gandhi", "S. S. Rao", "R. Pappu"],
+    venue: "Proceedings of the IEEE GLOBECOM",
+    year: 1994,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/GandhiRaoPappuGlobecom94.pdf",
+    selected: false
+  },
+  {
+    title: "On Waveform Coding Using Wavelets",
+    authors: ["P. Gandhi", "S. S. Rao", "R. Pappu"],
+    venue: "Proceedings of the IEEE Asilomar Conference on Signals, Systems, and Computers",
+    year: 1993,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/GandhiRaoPappuAsilomar93.pdf",
+    selected: false
+  },
+  {
+    title: "Hierarchical Wavelet Neural Networks",
+    authors: ["S. S. Rao", "R. Pappu"],
+    venue: "Proceedings of the IEEE-SP Workshop on Neural Networks for Signal Processing",
+    year: 1993,
+    type: "Conference Paper",
+    pdf: "https://nbviewer.jupyter.org/github/rpappu/pdf-publications/blob/master/RaoPappuNNSP93.pdf",
+    selected: false
+  },
+  {
+    title: "Nonlinear Time Series Prediction Using Wavelet Networks",
+    authors: ["S. S. Rao", "R. Pappu"],
+    venue: "Proceedings of the World Congress on Neural Networks",
+    year: 1993,
+    type: "Conference Paper",
+    pdf: "",
+    selected: false
+  }
+];
+
+let currentFilter = 'all';
+
+function renderPublications() {
+  const container = document.getElementById('publications-container');
+  const noResults = document.getElementById('no-results');
+  
+  // Filter publications
+  const filteredPubs = currentFilter === 'all' 
+    ? publications 
+    : publications.filter(pub => pub.type === currentFilter);
+  
+  // Group by year
+  const groupedByYear = filteredPubs.reduce((groups, pub) => {
+    if (!groups[pub.year]) {
+      groups[pub.year] = [];
+    }
+    groups[pub.year].push(pub);
+    return groups;
+  }, {});
+  
+  // Sort years descending
+  const sortedYears = Object.keys(groupedByYear).sort((a, b) => b - a);
+  
+  if (filteredPubs.length === 0) {
+    container.innerHTML = '';
+    noResults.style.display = 'block';
+  } else {
+    noResults.style.display = 'none';
+    
+    container.innerHTML = sortedYears.map(year => {
+      const yearPubs = groupedByYear[year];
+      return `
+        <div class="year-group">
+          <h2 class="year-header">${year}</h2>
+          ${yearPubs.map(pub => `
+            <div class="publication ${pub.selected ? 'selected' : ''}">
+              <div class="pub-title">${pub.title}</div>
+              <div class="pub-authors">${pub.authors.join(', ')}</div>
+              <div class="pub-venue"><em>${pub.venue}</em></div>
+              <div class="pub-meta">
+                <span class="pub-year">${pub.year}</span>
+                <span class="pub-type">${pub.type}</span>
+              </div>
+              ${pub.pdf ? `<a href="${pub.pdf}" class="pub-link" target="_blank">PDF</a>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // Update stats
+  document.getElementById('visible-count').textContent = filteredPubs.length;
+  document.getElementById('total-count').textContent = publications.length;
+}
+
+function setupFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      button.classList.add('active');
+      
+      // Update current filter
+      currentFilter = button.dataset.type;
+      
+      // Re-render publications
+      renderPublications();
+    });
+  });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  setupFilters();
+  renderPublications();
+});
+</script>
+```
