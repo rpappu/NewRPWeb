@@ -11,8 +11,7 @@ website:
         text: Publications
       - href: talks.qmd
         text: Presentations
-      - href: projects.qmd
-        text: Projects
+      
 
 format:
    html:
