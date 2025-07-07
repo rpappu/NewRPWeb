@@ -205,7 +205,6 @@ format: html
       <button class="filter-btn" data-type="XAI">Explainable AI</button>
       <button class="filter-btn" data-type="Innovation">Innovation</button>
       <button class="filter-btn" data-type="Technology">Technology</button>
-      <button class="filter-btn" data-type="Magic">Magic & AI</button>
     </div>
   </div>
 </div>
