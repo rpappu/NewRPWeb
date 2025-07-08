@@ -172,6 +172,12 @@ format: html
   margin: 40px 0;
 }
 
+.post-title a {
+  color: #333 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
 .stats {
   background: #e7f3ff;
   padding: 15px;
