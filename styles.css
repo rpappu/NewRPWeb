@@ -1,1 +1,254 @@
-/* css styles */
+/* ==============================================
+   UNIFIED STYLES FOR ALL QUARTO PAGES
+   ============================================== */
+
+/* Filter Container Styles */
+.filter-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #e9ecef;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Year Group Styles */
+.year-group {
+  margin-bottom: 30px;
+}
+
+.year-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Common Item Styles (for posts, projects, publications, talks) */
+.post, .project, .publication, .talk {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.post:hover, .project:hover, .publication:hover, .talk:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.post.featured, .project.featured {
+  border-left: 4px solid #28a745;
+  background: #f8fff9;
+}
+
+.publication.selected, .talk.selected {
+  border-left: 4px solid #28a745;
+  background: #f8fff9;
+}
+
+/* Title Styles */
+.post-title, .project-title, .pub-title, .talk-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.post-title a, .project-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-title a:hover, .project-title a:hover {
+  color: #007bff !important;
+  text-decoration: underline !important;
+}
+
+/* Author Styles */
+.post-authors, .pub-authors, .talk-authors {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.pub-authors, .talk-authors {
+  margin-bottom: 6px;
+}
+
+/* Content/Description Styles */
+.post-excerpt, .project-description, .talk-abstract {
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.talk-abstract {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Venue/Event Styles */
+.pub-venue {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.talk-event {
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.talk-location {
+  color: #777;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Meta Information Styles */
+.post-meta, .project-meta, .pub-meta, .talk-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.post-year, .project-year, .pub-year, .talk-year {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.post-type, .project-type, .pub-type, .talk-type {
+  background: #6c757d;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-status {
+  background: #28a745;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-status.in-progress {
+  background: #ffc107;
+  color: #000;
+}
+
+.project-status.archived {
+  background: #6c757d;
+}
+
+/* Tags and Technology Styles */
+.post-tags, .project-tech {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tag, .tech-tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Link Styles */
+.post-link, .pub-link, .talk-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.post-link:hover, .pub-link:hover, .talk-link:hover {
+  text-decoration: underline;
+}
+
+.talk-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.external-link {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Utility Styles */
+.no-results {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.stats {
+  background: #e7f3ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.intro-text {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
