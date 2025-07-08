@@ -212,7 +212,7 @@ format: html
 const projects = [
   {
     title: "Metriq",
-    description: "How does quantum computing Platform X running software stack Y perform on workload Z and how has that changed over time?. Working with Will Zeng and Nathan Shammah, I conceived of this concept and funded early development.",
+    description: "How does quantum computing Platform X running software stack Y perform on workload Z and how has that changed over time? Metriq is a free and open source platform that helps anyone better answer this question for themselves. Researchers and developers in academia and industry can submit results on existing benchmarks or propose new benchmarking tasks to the community. Working with Will Zeng and Nathan Shammah, I conceived of this concept and funded early development.",
     year: 2012,
     type: "Innovation",
     status: "completed",
