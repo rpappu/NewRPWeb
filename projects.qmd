@@ -328,7 +328,7 @@ function renderProjects() {
           <h2 class="year-header">${year}</h2>
           ${yearProjects.map(project => `
             <div class="project ${project.featured ? 'featured' : ''}">
-              <div class="project-title"><a href="${project.link}" style="color: #333; text-decoration: none;">${project.title}</a></div>
+           <div class="project-title"><a href="${project.link}">${project.title}</a></div>
               <div class="project-description">${project.description}</div>
               <div class="project-meta">
                 <span class="project-year">${project.year}</span>
