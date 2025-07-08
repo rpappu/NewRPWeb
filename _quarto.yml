@@ -3,7 +3,10 @@ project:
 
 website:
   title: "Ravi Pappu"
-  google-analytics: "G-EBJBWFWYTE"
+  google-analytics: 
+        tracking-id: "G-EBJBWFWYTE"
+        storage: none
+        
   navbar:
     right:
       - href: posts.qmd
