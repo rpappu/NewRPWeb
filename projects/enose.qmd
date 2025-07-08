@@ -7,3 +7,5 @@ image: /assets/enose.png
 ---
 
 I worked on [MIT's RealNose project](https://phys.org/news/2008-09-pave-artificial-nose.html) to try and detect odors at extremely low concentrations.
+
+![](/assets/enose.png)

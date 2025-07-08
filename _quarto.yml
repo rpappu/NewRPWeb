@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Ravi Pappu"
+  google-analytics: "G-EBJBWFWYTE"
   navbar:
     right:
       - href: posts.qmd
@@ -21,4 +22,5 @@ format:
     mainfont: "Libre Baskerville, Newsreader, EB Garamond, Georgia, serif"
 
 editor: visual
+
 
