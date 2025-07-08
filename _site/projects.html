@@ -93,16 +93,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./talks.html"> 
 <span class="menu-text">Presentations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -314,35 +314,44 @@ ul.task-list li input[type="checkbox"] {
   border-left: 4px solid #007bff;
 }
 </style>
+
 <div class="intro-text">
-  A collection of projects spanning RFID technology, holographic systems, physical cryptography, and innovative development initiatives. Click on any project for more information.
+  A collection of projects I've worked on over the years, spanning research, commercial development, and innovation initiatives.
+</div>
+
+<div class="stats">
+  <strong>Showing <span id="visible-count">0</span> of <span id="total-count">0</span> projects</strong>
 </div>
 
 <div class="filter-container">
   <div class="filter-group">
-    <label class="filter-label">Filter by Project Type:</label>
+    <span class="filter-label">Filter by Type:</span>
     <div class="filter-buttons">
-      <button class="filter-btn active" data-type="all">All Projects</button>
+      <button class="filter-btn active" data-type="all">All</button>
       <button class="filter-btn" data-type="Research">Research</button>
       <button class="filter-btn" data-type="Commercial">Commercial</button>
       <button class="filter-btn" data-type="Innovation">Innovation</button>
-      <button class="filter-btn" data-type="Hardware">Hardware</button>
-      <button class="filter-btn" data-type="Security">Security</button>
     </div>
   </div>
 </div>
 
-<div class="stats" id="stats">
-  Showing <span id="visible-count">7</span> of <span id="total-count">7</span> projects
-</div>
-
 <div id="projects-container"></div>
-
-<div class="no-results" id="no-results" style="display: none;">
+<div id="no-results" class="no-results" style="display: none;">
   No projects found matching the selected filters.
 </div>
+
 <script>
 const projects = [
+  {
+    title: "Metriq",
+    description: "How does quantum computing Platform X running software stack Y perform on workload Z and how has that changed over time?. Working with Will Zeng and Nathan Shammah, I conceived of this concept and funded early development.",
+    year: 2012,
+    type: "Commercial",
+    status: "completed",
+    technologies: ["Quantum Computing"],
+    featured: true,
+    link: "https://metriq.info"
+  },
   {
     title: "Magic Band",
     description: "My team at ThingMagic did the original R&D in support of Disney's Magic Band project. Revolutionary wearable RFID technology that transformed the Disney theme park experience, serving as room key, park ticket, payment method, and FastPass all in one device.",

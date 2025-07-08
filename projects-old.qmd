@@ -180,44 +180,11 @@ format: html
   border-left: 4px solid #007bff;
 }
 </style>
+```
 
-<div class="intro-text">
-  A collection of projects I've worked on over the years, spanning research, commercial development, and innovation initiatives.
-</div>
-
-<div class="stats">
-  <strong>Showing <span id="visible-count">0</span> of <span id="total-count">0</span> projects</strong>
-</div>
-
-<div class="filter-container">
-  <div class="filter-group">
-    <span class="filter-label">Filter by Type:</span>
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-type="all">All</button>
-      <button class="filter-btn" data-type="Research">Research</button>
-      <button class="filter-btn" data-type="Commercial">Commercial</button>
-      <button class="filter-btn" data-type="Innovation">Innovation</button>
-    </div>
-  </div>
-</div>
-
-<div id="projects-container"></div>
-<div id="no-results" class="no-results" style="display: none;">
-  No projects found matching the selected filters.
-</div>
-
+```{=html}
 <script>
 const projects = [
-  {
-    title: "Metriq",
-    description: "How does quantum computing Platform X running software stack Y perform on workload Z and how has that changed over time?. Working with Will Zeng and Nathan Shammah, I conceived of this concept and funded early development.",
-    year: 2012,
-    type: "Commercial",
-    status: "completed",
-    technologies: ["Quantum Computing"],
-    featured: true,
-    link: "https://metriq.info"
-  },
   {
     title: "Magic Band",
     description: "My team at ThingMagic did the original R&D in support of Disney's Magic Band project. Revolutionary wearable RFID technology that transformed the Disney theme park experience, serving as room key, park ticket, payment method, and FastPass all in one device.",
