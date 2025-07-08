@@ -60,7 +60,7 @@
     "href": "talks.html",
     "title": "Talks & Presentations",
     "section": "",
-    "text": "Filter by Talk Type:\n    \n      All Types\n      Keynotes\n      Conference Talks\n      Tech Talks\n      Workshops\n      Panels\n      Podcasts\n    \n  \n\n\n\n  Showing 13 of 13 talks\n\n\n\n\n\n  No talks found matching the selected filters."
+    "text": "No talks found matching the selected filters."
   },
   {
     "objectID": "projects/magicband.html",
@@ -95,6 +95,48 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "A collection of projects I've worked on over the years, spanning research, commercial development, and innovation initiatives.\n\n\n\n  Showing 0 of 0 projects\n\n\n\n  \n    Filter by Type:\n    \n      All\n      Research\n      Commercial\n      Innovation\n    \n  \n\n\n\n\n  No projects found matching the selected filters."
+    "text": "A collection of projects I've worked on over the years, spanning research, commercial development, and innovation initiatives. Click on the title for more information.\n\n\n\n\n\n\n  No projects found matching the selected filters."
+  },
+  {
+    "objectID": "index-2.html",
+    "href": "index-2.html",
+    "title": "Ravi Pappu",
+    "section": "",
+    "text": "I am CEO of Apeiron Labs, a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.\nUntil mid-2022, I was SVP and CTO at InQTel, where I work long-term technology strategy and roadmaps, tools to systematically understand technology innovation, and diligence for deep tech investments in Quantum Information Science, AI, IoT, and 5G. I helped co-found and was a Senior Commercializaton Advisor at IQT Emerge where I worked with DARPA-funded startups on commercialization strategies. Emerge was spun out of In-Q-Tel in early 2023.\nPrior to this, I was a platform architect at Trimble Navigation. I went to Trimble from ThingMagic, a venture-backed pioneer in the RFID/IoT space that I co-founded. ThingMagic was acquired by Trimble Navigation.\nAs a scientist (Ph.D., MIT 2001), I have worked on original and influential contributions to several fields. I am a science/technology/mathematics omnivore and really enjoy bringing my skills to bear on solving challenging problems at the intersection of science, technology, and product development. I am equally comfortable synthesizing a technology/product vision as I am executing it.\nMy Erdos Number is 3. (Paul Erdos → Leonard Schulman → Benjamin Recht → Ravi Pappu)"
+  },
+  {
+    "objectID": "index-2.html#education",
+    "href": "index-2.html#education",
+    "title": "Ravi Pappu",
+    "section": "Education",
+    "text": "Education\nPh.D. - MIT (2001)\nMS - MIT (1995)\nMSEE - Villanova University (1993)\nB.Tech - Osmania University, India (1991)"
+  },
+  {
+    "objectID": "index-2.html#selected-awards",
+    "href": "index-2.html#selected-awards",
+    "title": "Ravi Pappu",
+    "section": "Selected Awards",
+    "text": "Selected Awards\n\nMIT Technology Review’s TR35 2003\n40 Under 40, Boston Business Journal, 2008\nCarl T. Humphrey Memorial Award for Leadership in the Engineering Profession, Villanova University, 2004"
+  },
+  {
+    "objectID": "index-old.html",
+    "href": "index-old.html",
+    "title": "Ravi Pappu",
+    "section": "",
+    "text": "I am CEO of Apeiron Labs, a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.\nUntil mid-2022, I was SVP and CTO at InQTel, where I work long-term technology strategy and roadmaps, tools to systematically understand technology innovation, and diligence for deep tech investments in Quantum Information Science, AI, IoT, and 5G. I helped co-found and was a Senior Commercializaton Advisor at IQT Emerge where I worked with DARPA-funded startups on commercialization strategies. Emerge was spun out of In-Q-Tel in early 2023.\nPrior to this, I was a platform architect at Trimble Navigation. I went to Trimble from ThingMagic, a venture-backed pioneer in the RFID/IoT space that I co-founded. ThingMagic was acquired by Trimble Navigation.\nAs a scientist (Ph.D., MIT 2001), I have worked on original and influential contributions to several fields. I am a science/technology/mathematics omnivore and really enjoy bringing my skills to bear on solving challenging problems at the intersection of science, technology, and product development. I am equally comfortable synthesizing a technology/product vision as I am executing it.\nMy Erdos Number is 3. (Paul Erdos → Leonard Schulman → Benjamin Recht → Ravi Pappu)"
+  },
+  {
+    "objectID": "index-old.html#education",
+    "href": "index-old.html#education",
+    "title": "Ravi Pappu",
+    "section": "Education",
+    "text": "Education\nPh.D. - MIT (2001)\nMS - MIT (1995)\nMSEE - Villanova University (1993)\nB.Tech - Osmania University, India (1991)"
+  },
+  {
+    "objectID": "index-old.html#selected-awards",
+    "href": "index-old.html#selected-awards",
+    "title": "Ravi Pappu",
+    "section": "Selected Awards",
+    "text": "Selected Awards\n\nMIT Technology Review’s TR35 2003\n40 Under 40, Boston Business Journal, 2008\nCarl T. Humphrey Memorial Award for Leadership in the Engineering Profession, Villanova University, 2004"
   }
 ]

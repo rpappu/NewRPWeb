@@ -2,7 +2,7 @@
 title: "Ravi Pappu"
 about:
   template: trestles
-  image-width: 10em
+  image-width: 5em
   image-shape: round
   image: assets/rp-profile.png
   links:
@@ -19,37 +19,30 @@ about:
 
 ```{=html}
 <style>
-/* Override trestles template flexbox layout */
-.about-contents {
-  flex-grow: 3 !important;
-  flex-shrink: 0 !important;
-  flex-basis: 75% !important;
-}
-
-.about-entity {
-  flex-grow: 0 !important;
-  flex-shrink: 3 !important;
-  flex-basis: 25% !important;
-}
-
-/* Alternative: More aggressive width control */
-/*
-.about-contents {
-  flex-grow: 4 !important;
-  flex-basis: 80% !important;
-}
-
-.about-entity {
-  flex-grow: 0 !important;
-  flex-basis: 20% !important;
+/* Fixed left column, flexible right */
+/* Override trestles template column widths 
+.about-entity .about-contents {
+  display: grid !important;
+  grid-template-columns: 100px 1fr !important; 
+  gap: 2rem !important;
 }
 */
 
-/* Ensure proper responsive behavior */
+/* Alternative: percentage-based approach */
+
+.about-entity .about-contents {
+  display: grid !important;
+  grid-template-columns: 10% 90% !important;
+  gap: 2rem !important;
+}
+
+
+
+/* Ensure responsive behavior on smaller screens */
 @media (max-width: 768px) {
-  .about-contents, .about-entity {
-    flex-basis: 100% !important;
-    flex-direction: column !important;
+  .about-entity .about-contents {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 }
 </style>

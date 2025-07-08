@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="assets/rp-profile.png" class="about-image
-  rounded " style="width: 20em;">
+  round " style="height: 10em; width: 10em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Ravi Pappu</h1>
@@ -143,6 +143,37 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
+<style>
+/* Override trestles template flexbox layout */
+.about-contents {
+  flex-grow: 3 !important;
+  flex-shrink: 0 !important;
+  flex-basis: 75% !important;
+}
+.about-entity {
+  flex-grow: 0 !important;
+  flex-shrink: 3 !important;
+  flex-basis: 25% !important;
+}
+/* Alternative: More aggressive width control */
+/*
+.about-contents {
+  flex-grow: 4 !important;
+  flex-basis: 80% !important;
+}
+.about-entity {
+  flex-grow: 0 !important;
+  flex-basis: 20% !important;
+}
+*/
+/* Ensure proper responsive behavior */
+@media (max-width: 768px) {
+  .about-contents, .about-entity {
+    flex-basis: 100% !important;
+    flex-direction: column !important;
+  }
+}
+</style>
 <p>I am CEO of <a href="https://www.apeironlabs.com">Apeiron Labs</a>, a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.</p>
 <p>Until mid-2022, I was SVP and CTO at <a href="http://iqt.org">InQTel</a>, where I work long-term technology strategy and roadmaps, <a href="https://www.iqt.org/library/organizing-deep-tech-at-scale-a-technology-architecture-approach">tools to systematically understand technology innovation</a>, and diligence for deep tech investments in Quantum Information Science, AI, IoT, and 5G. I helped co-found and was a Senior Commercializaton Advisor at <a href="https://www.iqt.org/library/iqt-announces-launch-of-iqt-emerge-nc-to-enhance-technology-commercialization-for-national-security">IQT Emerge</a> where I worked with DARPA-funded startups on commercialization strategies. Emerge was spun out of In-Q-Tel in early 2023.</p>
 <p>Prior to this, I was a platform architect at <a href="https://www.trimble.com">Trimble Navigation</a>. I went to Trimble from <a href="http://meche.mit.edu/news-media/catching-radio-waves">ThingMagic</a>, a venture-backed pioneer in the RFID/IoT space that I co-founded. ThingMagic was acquired by Trimble Navigation.</p>

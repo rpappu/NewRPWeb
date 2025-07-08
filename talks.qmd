@@ -170,6 +170,7 @@ format: html
 ```
 
 ```{=html}
+<!--
 <div class="filter-container">
   <div class="filter-group">
     <label class="filter-label">Filter by Talk Type:</label>
@@ -188,7 +189,7 @@ format: html
 <div class="stats" id="stats">
   Showing <span id="visible-count">13</span> of <span id="total-count">13</span> talks
 </div>
-
+-->
 <div id="talks-container"></div>
 
 <div class="no-results" id="no-results" style="display: none;">

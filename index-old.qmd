@@ -2,8 +2,6 @@
 title: "Ravi Pappu"
 about:
   template: trestles
-  image-width: 10em
-  image-shape: round
   image: assets/rp-profile.png
   links:
     - icon: scholar
@@ -16,44 +14,6 @@ about:
       text: Apeiron Labs
       href: https://www.apeironlabs.com
 ---
-
-```{=html}
-<style>
-/* Override trestles template flexbox layout */
-.about-contents {
-  flex-grow: 3 !important;
-  flex-shrink: 0 !important;
-  flex-basis: 75% !important;
-}
-
-.about-entity {
-  flex-grow: 0 !important;
-  flex-shrink: 3 !important;
-  flex-basis: 25% !important;
-}
-
-/* Alternative: More aggressive width control */
-/*
-.about-contents {
-  flex-grow: 4 !important;
-  flex-basis: 80% !important;
-}
-
-.about-entity {
-  flex-grow: 0 !important;
-  flex-basis: 20% !important;
-}
-*/
-
-/* Ensure proper responsive behavior */
-@media (max-width: 768px) {
-  .about-contents, .about-entity {
-    flex-basis: 100% !important;
-    flex-direction: column !important;
-  }
-}
-</style>
-```
 
 I am CEO of [Apeiron Labs](https://www.apeironlabs.com), a venture-backed startup that is working to reduce the cost of ocean monitoring by orders of magnitude.
 
