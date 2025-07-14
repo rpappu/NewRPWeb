@@ -88,6 +88,19 @@
 }
 
 /* Title Styles */
+
+.project-title {
+  font-size: 18px;
+  font-weight: 600 !important;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.project-title a {
+  color: #333 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+},
 .post-title, .project-title, .pub-title, .talk-title {
   font-size: 18px;
   font-weight: 600;
